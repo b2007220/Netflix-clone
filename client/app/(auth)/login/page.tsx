@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
-import GoogleIcon from "../../../public/google.svg";
-import Image from "next/image";
+import GithubSignInButton from "../../components/GithubSignInButtion";
+import GoogleSignInButton from "../../components/GoogleSignInButton";
 
 export default function Login() {
   return (
@@ -30,9 +30,8 @@ export default function Login() {
         </Link>
       </div>
       <div className="flex w-full justify-center items-center gap-x-3 mt-6">
-        <Button variant="outline" size="icon">
-          <Image src={GoogleIcon} alt="google icon" className="w-6 h-6" />
-        </Button>
+        <GithubSignInButton />
+        <GoogleSignInButton />
       </div>
     </div>
   );
